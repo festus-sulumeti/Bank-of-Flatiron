@@ -1,38 +1,96 @@
-.App {
+/* Layout (60%) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Color (30%) */
+:root {
+  --primary-color: #3498db; /* Primary color (30%) */
+  --secondary-color: #e74c3c; /* Secondary color (10%) */
+  --accent-color: #27ae60; /* Accent color (10%) */
+}
+
+
+body {
+  background-color: #F1F5F9;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Generic Styles End */
+
+.wrapper {
+  background-color: white;
+  width: 1000px;
+  height: 2000px;
+  margin: 100px auto;
+  border-radius: 10px;
   text-align: center;
+  padding: 40px;
+}
+.link {
+  display: block;
+  text-decoration: none;
+  margin-top: 15px;
+  padding: 12px 16px;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Typography (10%) */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3 {
+  color: var(--primary-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background-color: var(--accent-color);
   color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Add this CSS to a separate .css file or include it within your TransactionList.js */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+thead {
+  background-color: #f5f5f5;
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
